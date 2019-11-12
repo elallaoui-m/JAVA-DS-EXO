@@ -27,6 +27,7 @@ public class AnnuaireServer extends Thread {
 			Annuaire annuaire = new Annuaire();
 			server = new ServerSocket(port);
 			System.out.println("Waiting for clients");
+			while(true) {
 			client = server.accept();
 			System.out.println("Server : A client was connected!!!!");
 			ois = new ObjectInputStream(client.getInputStream());
@@ -43,6 +44,7 @@ public class AnnuaireServer extends Thread {
 				client.close();
 			} else {
 				System.out.println("Nothind to send from the server");
+			}
 			}
 
 		} catch (IOException e) {
