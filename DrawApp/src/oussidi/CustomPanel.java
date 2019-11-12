@@ -58,20 +58,7 @@ public class CustomPanel extends JPanel{
 
     void rotate()
     {
-        /*if (Math.toRadians((double)angle) > Math.PI)
-        {
-            angle-=Math.toRadians(40);
-            System.out.println(Math.toRadians(angle) +"-");
-
-        }
-
-        else  if (Math.toRadians((double)angle) > -Math.PI)
-        {
-            angle+=Math.toRadians(40);
-            System.out.println(Math.toRadians(angle) +"+");
-        }*/
-
-
+        
         if (goRight)
             angle-=Math.toRadians(40);
         else
