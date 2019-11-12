@@ -1,0 +1,6 @@
+Dacia Logan;Model 2012;300;Diesel
+Hyunday i10;Model 2013;280;Essance
+Volkswagen polo;Model 2012;450;Diesel
+Peugeot 307;Model 2013;550;Diesel
+Mercedes 220;Model 2012;700;Diesel
+Range Rover;Model 2013;1000;Diesel
