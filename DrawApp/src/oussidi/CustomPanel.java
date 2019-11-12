@@ -44,6 +44,8 @@ public class CustomPanel extends JPanel{
         g2.setStroke(new BasicStroke(5));
         float x = this.getWidth() / 2.0f;
         float y = this.getHeight() / 2.0f;
+
+        //rotate with respect to an angle
         ((Graphics2D) g).rotate(Math.toRadians(angle),x,y);
 
         g.drawLine(x1,y1,x2,y2);
@@ -58,12 +60,14 @@ public class CustomPanel extends JPanel{
 
     void rotate()
     {
-        
+
+        //turn right or left
         if (goRight)
             angle-=Math.toRadians(40);
         else
             angle+=Math.toRadians(40);
 
+        //change rotation sens
         if (Math.toRadians(angle)<-Math.PI/4)
             goRight = false;
         else if (Math.toRadians(angle)>Math.PI/4)

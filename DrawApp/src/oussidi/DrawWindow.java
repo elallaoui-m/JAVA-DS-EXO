@@ -12,5 +12,7 @@ public class DrawWindow extends JFrame {
         getContentPane().add(panel);
         setSize(400,400);
         setVisible(true);
+
+
     }
 }
