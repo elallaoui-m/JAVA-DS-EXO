@@ -45,8 +45,6 @@ public class Ex2_Info_Amis extends JFrame {
             }finally {
                 lnr.close();
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
         catch (IOException e) {
             e.printStackTrace();
